@@ -1,4 +1,10 @@
-function game(){
+let playerScore = 0;
+let computerScore = 0;
+
+let gameFinished = false;
+
+
+/*function game(){
     let playerScore = 0;
     let computerScore = 0;
     for (let i = 0; i < 5; i++){
@@ -12,6 +18,7 @@ function game(){
             playerScore++;
         }
         console.log(roundResult[1] + `, score is ${playerScore} to ${computerScore}`);
+        updateResult(playerScore, computerScore);
     }
     let gameResult = "";
     if (computerScore > playerScore){
@@ -22,12 +29,16 @@ function game(){
         gameResult = "Es un empate";
     }
     return gameResult;
-}
+}*/
 
 function computerPlay(){
     let move = Math.floor(Math.random()*3)
     let possibleMoves = ["rock", "paper", "scissors"]
     return possibleMoves[move];
+}
+
+function roundFromPlayer(playerMove){
+    return round(playerMove, computerPlay())
 }
 
 function round(playerMove, computerMove){
@@ -64,6 +75,8 @@ function round(playerMove, computerMove){
                 "Tie": [1, `It\'s a tie: ${playerMove} ties ${computerMove}`],
                 "Lose": [0, `You lose: ${playerMove} loses against ${computerMove}`]}
 
+    console.log(logs[result]);
     return logs[result];
+    
 }
 
