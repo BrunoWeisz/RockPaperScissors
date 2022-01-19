@@ -1,0 +1,38 @@
+body{
+    background-color: greenyellow;
+}
+
+p{
+    text-align: center;
+}
+
+button{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+#title{
+    font-size: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: green;
+    color: red;
+    height: 130px;
+    text-align: center;
+    padding: 80px;
+}
+
+.playerSelection{
+    margin-top: 10px;
+    margin-left: 50px;
+    border: 2px;
+    border-style: dashed;
+    border-color: blue;
+    background-color: cornflowerblue;
+    width: 300px;
+    height: 200px;
+    font-size: large;
+    font-weight: 500;
+}
