@@ -66,3 +66,4 @@ function round(playerMove, computerMove){
 
     return logs[result];
 }
+
